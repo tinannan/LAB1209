@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LAB1209</string>
+    <string name="groceries">Groceries</string>
+    <string name="addItem">+</string>
 </resources>
