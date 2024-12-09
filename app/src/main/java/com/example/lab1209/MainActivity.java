@@ -1,6 +1,8 @@
 package com.example.lab1209;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
@@ -24,5 +26,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         itemsListView = findViewById(R.id.listView);
+
+        // click listener for add note button
+        Button addNoteButton = findViewById(R.id.addItembutton);
+        addNoteButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AddListItems.class);
+            startActivity(intent);
+        });
     }
 }

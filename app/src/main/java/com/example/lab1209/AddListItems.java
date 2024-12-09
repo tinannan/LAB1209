@@ -14,7 +14,7 @@ public class AddListItems extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.list_items);
+        setContentView(R.layout.add_list_items);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.list), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
